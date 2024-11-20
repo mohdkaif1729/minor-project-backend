@@ -3,6 +3,9 @@
 ```bash
   npm i -D nodemon
   npm i -D prettier
+  npm i express
+  npm i mongoose
+  npm i dotenv
 ```
 
 1. create package.json file in root directory.
