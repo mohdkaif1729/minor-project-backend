@@ -1,3 +1,10 @@
+## packages
+
+```bash
+  npm i -D nodemon
+  npm i -D prettier
+```
+
 1. create package.json file in root directory.
 
 ```bash
