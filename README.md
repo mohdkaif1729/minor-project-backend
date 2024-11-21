@@ -11,6 +11,8 @@
   npm i mongoose-aggregate-paginate-v2
   npm i bcrypt
   npm i jsonwebtoken
+  npm i multer
+  npm i cloudinary
 ```
 
 1. create package.json file in root directory.
@@ -45,7 +47,8 @@
   touch .gitignore
 ```
 
-[.gitignore-generator](https://mrkandreev.name/snippets/gitignore-generator/#Node) 6. create files in src folder
+[.gitignore-generator](https://mrkandreev.name/snippets/gitignore-generator/#Node)
+<br /> 6. create files in src folder
 
 ```bash
   touch index.js app.js constants.js
