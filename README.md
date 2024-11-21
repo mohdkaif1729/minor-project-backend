@@ -6,6 +6,8 @@
   npm i express
   npm i mongoose
   npm i dotenv
+  npm i cookie-parser
+  npm i cors
 ```
 
 1. create package.json file in root directory.
