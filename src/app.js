@@ -13,10 +13,7 @@ app.use(upload.none());
 
 app.use(
   cors({
-    origin: [
-      "https://minor-project-murex.vercel.app/",
-      "http://localhost:4000",
-    ],
+    origin: ["https://minor-project-murex.vercel.app", "http://localhost:4000"],
     credentials: true,
   })
 );
