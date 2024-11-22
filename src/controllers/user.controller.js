@@ -103,6 +103,7 @@ const loginUser = asyncHandler(async (req, res) => {
   const options = {
     httpOnly: true,
     secure: true,
+    sameSite: "None",
   };
 
   return res
@@ -123,7 +124,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const logoutUser = asyncHandler(async (req, res) => {
-  const user = User.findByIdAndUpdate(
+  const user = await User.findByIdAndUpdate(
     req.user._id,
     {
       $set: { refreshToken: undefined },
@@ -137,6 +138,7 @@ const logoutUser = asyncHandler(async (req, res) => {
   const options = {
     httpOnly: true,
     secure: true,
+    sameSite: "None",
   };
 
   return res
