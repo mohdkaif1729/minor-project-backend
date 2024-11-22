@@ -3,14 +3,17 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import multer from "multer";
 
+console.log("cors_origin:", process.env.CORS_ORIGIN);
+
 const app = express();
 const upload = multer();
 
 // middlewares
 app.use(upload.none());
+
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: "http://localhost:4000",
     credentials: true,
   })
 );
