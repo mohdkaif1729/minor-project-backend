@@ -13,7 +13,10 @@ app.use(upload.none());
 
 app.use(
   cors({
-    origin: "http://localhost:4000",
+    origin: [
+      "https://minor-project-git-master-mohdkaif1729s-projects.vercel.app",
+      "http://localhost:4000",
+    ],
     credentials: true,
   })
 );
