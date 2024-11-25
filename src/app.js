@@ -14,7 +14,7 @@ app.use(upload.none());
 app.use(
   cors({
     origin: [
-      "https://minor-project-frontend-sandy.vercel.app/",
+      "https://minor-project-frontend-sandy.vercel.app",
       "https://minor-project-crown.vercel.app",
       "http://localhost:4000",
       "http://127.0.0.1:5500",
